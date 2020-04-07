@@ -1,8 +1,9 @@
 {
   "compilerOptions": {
     "checkJs": true,
-    "baseUrl": ".",
+    "jsx": "preserve",
     "resolveJsonModule": true,
+    "baseUrl": ".",
     "paths": {
       "@/*": ["src/*"]
     }

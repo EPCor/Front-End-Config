@@ -1,2 +1,4 @@
-document.getElementById('app').innerHTML =
-  '<h1>Front-End Engineering Configuration</h1>';
+import ReactDOM from 'react-dom';
+import App from './app.jsx';
+
+ReactDOM.render(App, document.getElementById('app'));

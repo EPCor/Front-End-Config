@@ -6,6 +6,7 @@ const options = {
   parserOptions: {
     ecmaVersion: 2020,
     sourceType: 'module',
+    ecmaFeatures: { jsx: true },
   },
 
   /* environment defines global variables that are predefined */
@@ -23,7 +24,13 @@ const options = {
   },
 
   /* third-party plugins */
-  plugins: [],
+  plugins: [
+    /**
+     * @integration react-hooks
+     * @package eslint-plugin-react-hooks
+     */
+    'react-hooks',
+  ],
   /* Plugins may provide processors */
   processor: '',
   overrides: [
@@ -38,7 +45,12 @@ const options = {
   ],
 
   /* Adding Shared Settings */
-  settings: {},
+  settings: {
+    react: {
+      version: 'detect',
+      pragma: 'React',
+    },
+  },
   /* Extending Configuration */
   extends: [
     /**
@@ -56,6 +68,11 @@ const options = {
      * @recommended eslint-plugin-prettier exposes a "recommended" configuration that configures both eslint-plugin-prettier and eslint-config-prettier in a single step.
      */
     'plugin:prettier/recommended',
+    /**
+     * @integration react
+     * @package eslint-plugin-react
+     */
+    'plugin:react/recommended',
   ],
   rules: {
     /**
@@ -133,6 +150,17 @@ const options = {
     'prefer-template': ['warn'],
 
     'prettier/prettier': ['warn'],
+    /**
+     * React
+     */
+    'react/prop-types': ['off'],
+    'react/no-find-dom-node': ['off'],
+    'react/jsx-closing-tag-location': ['warn'],
+    'react/display-name': ['off'],
+    // Checks rules of Hooks
+    'react-hooks/rules-of-hooks': ['error'],
+    // Checks effect dependencies
+    'react-hooks/exhaustive-deps': ['warn'],
   },
 };
 

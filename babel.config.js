@@ -10,6 +10,7 @@ const options = {
         exclude: ['@babel/plugin-transform-regenerator'],
       },
     ],
+    ['@babel/preset-react'],
   ],
   plugins: [
     // a ?? b
