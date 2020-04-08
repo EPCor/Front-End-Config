@@ -265,9 +265,19 @@ npm i -D typescript
 npx tsc --init # > tsconfig.json
 ```
 
-[tsconfig.json]()
+update `tsconfig.json`, (jsconfig.json is a descendant of tsconfig.json)
 
-**TypeScript + VS Code**
+```json
+{
+  "allowJs": true,
+  "checkJs": true,
+  "resolveJsonModule": true,
+  "baseUrl": "./",
+  "paths": { "@/*": ["src/*"] }
+}
+```
+
+##### TypeScript + VS Code
 
 update [.vscode/setting.json][setting.json]
 
@@ -281,7 +291,30 @@ update [.vscode/setting.json][setting.json]
 }
 ```
 
-**TypeScript + Babel**
+##### TypeScript + ESlint
+
+- npm uninstall babel-eslint
+- npm i -D @typescript-eslint/parser
+- npm i -D @typescript-eslint/eslint-plugin
+
+update .eslintrc.js
+
+```diff
+{
+- parser: 'babel-eslint',
++ parser: '@typescript-eslint/parser',
+  extends: [
+    'eslint:recommended',
++   'plugin:@typescript-eslint/eslint-recommended',
++   'plugin:@typescript-eslint/recommended',
+    'plugin:prettier/recommended',
++   'prettier/@typescript-eslint'
+  ]
+}
+```
+
+##### TypeScript + Babel
+
 npm i -D @babel/preset-typescript
 
 update [babel.config.js][babel.config.js]
