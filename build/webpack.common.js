@@ -20,7 +20,7 @@ module.exports = {
         loader: 'eslint-loader',
       },
       {
-        test: /\.jsx?$/,
+        test: /\.[jt]sx?$/,
         exclude: /node_modules/,
         include: [resolveCWD('src')],
         use: 'babel-loader',
@@ -95,7 +95,7 @@ module.exports = {
       '@': path.resolve(__dirname, '../src'),
       vue$: 'vue/dist/vue.esm.js',
     },
-    extensions: ['.js', '.json', 'jsx', 'ts', 'tsx', 'vue'],
+    extensions: ['.js', '.json', '.jsx', '.ts', '.tsx', '.vue'],
   },
   externals: {},
 };
