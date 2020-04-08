@@ -19,7 +19,7 @@ module.exports = {
         loader: 'eslint-loader',
       },
       {
-        test: /\.jsx?$/,
+        test: /\.[jt]sx?$/,
         exclude: /node_modules/,
         include: [resolveCWD('src')],
         use: 'babel-loader',
@@ -88,7 +88,7 @@ module.exports = {
     alias: {
       '@': path.resolve(__dirname, '../src'),
     },
-    extensions: ['.js', '.json', 'jsx', 'ts', 'tsx', 'vue'],
+    extensions: ['.js', '.json', '.jsx', '.ts', '.tsx', '.vue'],
   },
   externals: {},
 };
