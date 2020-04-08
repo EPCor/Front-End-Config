@@ -529,7 +529,7 @@ npm i -D eslint-plugin-react-hooks
 
 #### Vue
 
-npm i -S Vue
+npm i -S vue
 npm i -D vue-template-compiler
 
 **Vue + Babel**
