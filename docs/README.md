@@ -129,7 +129,7 @@ npm i -D style-loader css-loader
 npm i -D file-loader url-loader
 
 # webpack plugins
-npm i -D clean-webpack-plugin html-webpack-plugin mini-css-extract-plugin hard-source-webpack-plugin 
+npm i -D clean-webpack-plugin html-webpack-plugin mini-css-extract-plugin hard-source-webpack-plugin
 ```
 
 - _[webpack.config.js][webpack.config.js]_
@@ -234,7 +234,7 @@ npm i -S core-js @babel/runtime
 # Presets
 npm i -D @babel/preset-env @babel/plugin-transform-runtime
 # Plugins
-npm i -D @babel/plugin-proposal-class-properties @babel/plugin-proposal-private-methods @babel/plugin-proposal-decorators @babel/plugin-proposal-optional-chaining @babel/plugin-proposal-nullish-coalescing-operator
+npm i -D @babel/plugin-proposal-class-properties @babel/plugin-proposal-private-methods @babel/plugin-proposal-decorators @babel/plugin-proposal-optional-chaining @babel/plugin-proposal-nullish-coalescing-operator @babel/plugin-syntax-logical-assignment-operators @babel/plugin-proposal-export-namespace-from
 ```
 
 - _[babel.config.js][babel.config.js]_: Babel is a JavaScript compiler

@@ -88,6 +88,7 @@ module.exports = {
     alias: {
       '@': path.resolve(__dirname, '../src'),
     },
+    extensions: ['.js', '.json', 'jsx', 'ts', 'tsx', 'vue'],
   },
   externals: {},
 };
