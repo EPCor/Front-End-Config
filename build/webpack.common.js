@@ -4,6 +4,7 @@ const { CleanWebpackPlugin } = require('clean-webpack-plugin');
 const HTMLWebpackPlugin = require('html-webpack-plugin');
 const HardSourceWebpackPlugin = require('hard-source-webpack-plugin');
 const CopyWebpackPlugin = require('copy-webpack-plugin');
+const VueLoaderPlugin = require('vue-loader/lib/plugin');
 const resolveCWD = (cwd => name => path.resolve(cwd, name))(process.cwd());
 
 module.exports = {
@@ -23,6 +24,10 @@ module.exports = {
         exclude: /node_modules/,
         include: [resolveCWD('src')],
         use: 'babel-loader',
+      },
+      {
+        test: /\.vue$/,
+        loader: 'vue-loader',
       },
       {
         test: /\.(png|jpg|gif|svg)$/,
@@ -52,6 +57,7 @@ module.exports = {
     ],
   },
   plugins: [
+    new VueLoaderPlugin(),
     new webpack.DefinePlugin({
       NAME: 'APP',
     }),
@@ -87,6 +93,7 @@ module.exports = {
     symlinks: false,
     alias: {
       '@': path.resolve(__dirname, '../src'),
+      vue$: 'vue/dist/vue.esm.js',
     },
     extensions: ['.js', '.json', 'jsx', 'ts', 'tsx', 'vue'],
   },

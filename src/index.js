@@ -1,2 +1,10 @@
-document.getElementById('app').innerHTML =
-  '<h1>Front-End Engineering Configuration</h1>';
+import Vue from 'vue';
+import App from './app.vue';
+
+Vue.config.productionTip = false;
+
+new Vue({
+  el: '#app',
+  components: { App },
+  template: '<App/>',
+});
