@@ -1,6 +1,6 @@
 # Front-End Engineering Configuration
 
-![Front-End Engineering Configuration][FEEC]
+![Front-End Engineering Configuration][feec]
 
 | Branch name                | Feature            |       Stage        |
 | :------------------------- | :----------------- | :----------------: |
@@ -17,25 +17,26 @@
 
 ### Install
 
-__VS Code Extensions__
+**VS Code Extensions**
+
 ```json
 [
-    "EditorConfig.EditorConfig",
-    "esbenp.prettier-vscode",
-    "dbaeumer.vscode-eslint",
-    "csstools.postcss",
-    "stylelint.vscode-stylelint",
+  "EditorConfig.EditorConfig",
+  "esbenp.prettier-vscode",
+  "dbaeumer.vscode-eslint",
+  "csstools.postcss",
+  "stylelint.vscode-stylelint"
 ]
 ```
 
-__npm Packages__: `$ npm i`
+**npm Packages**: `$ npm i`
 
 ### Run
 
 #### development
 
-* `$ npm run start`
-* `Cmd + Shift B`
+- `$ npm run start`
+- `Cmd + Shift B`
 
 #### build deploy
 
@@ -45,37 +46,40 @@ __npm Packages__: `$ npm i`
 
 #### Lint with VS Code
 
-__Show VS Code Problems__: `Cmd + Shift + M`
+**Show VS Code Problems**: `Cmd + Shift + M`
 
-__VS Code__
-* Format Document: `Opt + Shift + F`
-* Format Selection: `Cmd + K Cmd + F`
-* Save without Formatting: `Cmd + K S`
-* Quick fix: `Cmd + .`
-* Auto fix: `Cmd + Opt + .`
+**VS Code**
+
+- Format Document: `Opt + Shift + F`
+- Format Selection: `Cmd + K Cmd + F`
+- Save without Formatting: `Cmd + K S`
+- Quick fix: `Cmd + .`
+- Auto fix: `Cmd + Opt + .`
 
 #### Lint with CLI
 
-__Check__
+**Check**
+
 ```sh
 npm run stylelint
 npm run eslint
 npm run lint
 ```
-__Fix__
+
+**Fix**
+
 ```sh
 npm run fix
 ```
-
 
 ## License
 
 [MIT License](/LICENSE)
 
-[FEEC]: https://repository-images.githubusercontent.com/206890549/9aa3e580-d1bc-11e9-9711-e5a4ef0f2c88
-[b-master]:     https://github.com/zhilidali/Front-End-Config
-[b-type]:       https://github.com/zhilidali/Front-End-Config/tree/type
-[b-react]:      https://github.com/zhilidali/Front-End-Config/tree/react
+[feec]: https://repository-images.githubusercontent.com/253847428/3bfc4100-7930-11ea-8d90-fe63d4fb2054
+[b-master]: https://github.com/zhilidali/Front-End-Config
+[b-type]: https://github.com/zhilidali/Front-End-Config/tree/type
+[b-react]: https://github.com/zhilidali/Front-End-Config/tree/react
 [b-react+type]: https://github.com/zhilidali/Front-End-Config/tree/react+type
-[b-vue]:        https://github.com/zhilidali/Front-End-Config/tree/vue
-[b-vue+type]:   https://github.com/zhilidali/Front-End-Config/tree/vue+type
+[b-vue]: https://github.com/zhilidali/Front-End-Config/tree/vue
+[b-vue+type]: https://github.com/zhilidali/Front-End-Config/tree/vue+type
