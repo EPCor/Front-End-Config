@@ -11,6 +11,7 @@ const options = {
         exclude: ['@babel/plugin-transform-regenerator'],
       },
     ],
+    ['@babel/preset-typescript'],
   ],
   plugins: [
     // export * as ns from "mod"
