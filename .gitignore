@@ -17,6 +17,7 @@ pids
 # Dependency directories
 node_modules/
 jspm_packages/
+miniprogram_npm/
 
 # Optional npm cache directory
 .npm
