@@ -109,7 +109,7 @@ common configuration options:
 │   └── README.md
 ├── test/ # test case
 ├── build/
-└── config/a
+└── config/
 ```
 
 ## Building Configuration
