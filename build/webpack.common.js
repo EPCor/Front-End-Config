@@ -69,12 +69,9 @@ module.exports = {
       },
     }),
     new HardSourceWebpackPlugin(),
-    new CopyWebpackPlugin([
-      {
-        from: 'public',
-        to: '.',
-      },
-    ]),
+    new CopyWebpackPlugin({
+      patterns: [{ from: 'public', to: '.' }],
+    }),
   ],
   optimization: {
     runtimeChunk: 'single',
