@@ -13,10 +13,10 @@ const options = {
     ],
   ],
   plugins: [
+    // ||=, &&= , ??=
+    ['@babel/plugin-proposal-logical-assignment-operators'],
     // export * as ns from "mod"
     ['@babel/plugin-proposal-export-namespace-from'],
-    // ||=, &&= , ??=
-    ['@babel/plugin-syntax-logical-assignment-operators'],
     // a ?? b
     ['@babel/plugin-proposal-nullish-coalescing-operator'],
     // a?.b
