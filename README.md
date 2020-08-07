@@ -2,13 +2,13 @@
 
 ![Front-End Engineering Configuration][feec]
 
-| Branch name                | Feature            |       Stage        |
+| Branch Name                | Feature            |       Stage        |
 | :------------------------- | :----------------- | :----------------: |
 | [master][b-master]         | Base Configuration | :white_check_mark: |
 | [type][b-type]             | TypeScript         | :white_check_mark: |
 | [react][b-react]           | React              | :white_check_mark: |
 | [react+type][b-react+type] | React + TypeScript |   :construction:   |
-| [vue][b-vue]               | Vue                |     :question:     |
+| [vue][b-vue]               | Vue                | :white_check_mark: |
 | [vue+type][b-vue+type]     | Vue + TypeScript   |     :question:     |
 
 ## Usage
