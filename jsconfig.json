@@ -1,10 +1,15 @@
+/**
+ * @Author: zhilidali@qq.com
+ * @Description: JavaScript Project Configuration, descendant of tsconfig.json
+ */
 {
   "compilerOptions": {
     "checkJs": false,
     "baseUrl": ".",
     "resolveJsonModule": true,
     "paths": {
-      "@/*": ["src/*"]
+      "/*": ["./*"],
+      "~/*": ["src/*"]
     }
   }
 }

@@ -3,20 +3,13 @@
 ## TOC
 
 - **[Authoring Configuration](#authoring-configuration)**
-  - [License](#license)
-  - [Initiator](#initiator)
-  - [Bundler](#bundler)
 - **[Building Configuration](#building-configuration)**
-  - [Compiler](#compiler)
-  - [Bundler](#bundler)
 - **[Coding Configuration](#coding-configuration)**
-  - [stylelint](#stylelint)
-  - [ESLint](#eslint)
 - **[Deploying Configuration](#deploying-configuration)**
 
 ## Authoring Configuration
 
-> Initializer
+Initializer
 
 ### Initialize Git
 
