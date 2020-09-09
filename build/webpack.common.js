@@ -83,7 +83,8 @@ module.exports = {
   resolve: {
     symlinks: false,
     alias: {
-      '@': path.resolve(__dirname, '../src'),
+      '/': path.resolve(__dirname, '../'),
+      '~': path.resolve(__dirname, '../src'),
     },
     extensions: ['.js', '.json', '.jsx', '.ts', '.tsx', '.vue'],
   },
