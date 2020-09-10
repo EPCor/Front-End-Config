@@ -135,7 +135,9 @@ npm i -D clean-webpack-plugin html-webpack-plugin mini-css-extract-plugin hard-s
 ```diff
 {
 + "paths": {
-+   "@/*": ["src/*"]
++   "~/*": ["src/*"],
++   "@/*": ["./*"],
++   "@components": ["src/components/*"]
 + }
 }
 ```
@@ -266,7 +268,11 @@ update `tsconfig.json`, (jsconfig.json is a descendant of tsconfig.json)
   "checkJs": true,
   "resolveJsonModule": true,
   "baseUrl": "./",
-  "paths": { "@/*": ["src/*"] }
+  "paths": {
+    "~/*": ["src/*"],
+    "@/*": ["./*"],
+    "@components": ["src/components/*"]
+  }
 }
 ```
 
