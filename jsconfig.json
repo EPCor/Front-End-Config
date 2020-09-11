@@ -7,6 +7,7 @@
     "checkJs": false,
     "jsx": "preserve",
     "resolveJsonModule": true,
+    "experimentalDecorators": true,
     "baseUrl": ".",
     "paths": {
       "~/*": ["src/*"],
