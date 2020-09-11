@@ -1,9 +1,11 @@
 import React from 'react';
+import { Provider } from 'react-redux';
+import { store } from '~/redux/store';
 import AppRouter from '~/route/Router';
 
 export default (
-  <div className="app">
-    <h2>Front-End Engineering Configuration for React</h2>
+  <Provider store={store}>
+    <h2>React Engineering Configuration</h2>
     <AppRouter />
-  </div>
+  </Provider>
 );
