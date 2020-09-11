@@ -5,8 +5,9 @@
 {
   "compilerOptions": {
     "checkJs": false,
-    "baseUrl": ".",
     "resolveJsonModule": true,
+    "experimentalDecorators": true,
+    "baseUrl": ".",
     "paths": {
       "~/*": ["src/*"],
       "@/*": ["./*"],
