@@ -9,6 +9,7 @@ module.exports = {
     host: '0.0.0.0',
     port: config.port,
     open: true,
+    historyApiFallback: true,
   },
   module: {
     rules: [

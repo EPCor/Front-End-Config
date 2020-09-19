@@ -1,13 +1,23 @@
 <template>
   <div>
-    <Home />
+    <p>
+      <router-link to="/home">Go Home</router-link>
+      <router-link to="/about">Go About</router-link>
+    </p>
+    <transition>
+      <router-view></router-view>
+    </transition>
   </div>
 </template>
 
 <script>
-import Home from '~/pages/Home.vue';
 export default {
   name: 'App',
-  components: { Home },
 };
 </script>
+
+<style>
+.router-link-active {
+  font-weight: bold;
+}
+</style>

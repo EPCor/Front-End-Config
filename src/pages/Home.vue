@@ -31,6 +31,6 @@ export default {
 
 <style>
 .home {
-  font-family: 'Courier New', Courier, monospace;
+  text-align: center;
 }
 </style>
