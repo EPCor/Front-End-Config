@@ -6,12 +6,11 @@ import { updateData } from '~/redux/action';
   state => ({
     data: state.home.data,
   }),
-  {
-    updateData,
-  }
+  { updateData }
 )
 class About extends React.Component {
   handleClick = () => this.props.updateData(this.props.data + 1);
+
   render() {
     return (
       <>
