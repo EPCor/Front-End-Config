@@ -2,14 +2,16 @@
 
 ![Front-End Engineering Configuration][feec]
 
-| Branch Name                | Feature            |       Stage        |
-| :------------------------- | :----------------- | :----------------: |
-| [master][b-master]         | Base Configuration | :white_check_mark: |
-| [type][b-type]             | TypeScript         | :white_check_mark: |
-| [react][b-react]           | React              | :white_check_mark: |
-| [react+type][b-react+type] | React + TypeScript |   :construction:   |
-| [vue][b-vue]               | Vue                | :white_check_mark: |
-| [vue+type][b-vue+type]     | Vue + TypeScript   |     :question:     |
+| Branch Name                | Feature                |       Stage        |
+| :------------------------- | :--------------------- | :----------------: |
+| [master][b-master]         | Base Configuration     | :white_check_mark: |
+| [type][b-type]             | TypeScript             | :white_check_mark: |
+| [react][b-react]           | React                  | :white_check_mark: |
+| [react app][b-react-app]   | React + Router + Redux | :white_check_mark: |
+| [react+type][b-react+type] | React + TypeScript     |   :construction:   |
+| [vue][b-vue]               | Vue                    | :white_check_mark: |
+| [vue app][b-vue-app]       | Vue + Router + Vuex    | :white_check_mark: |
+| [vue+type][b-vue+type]     | Vue + TypeScript       |     :question:     |
 
 ## Usage
 
@@ -80,6 +82,8 @@ npm run fix
 [b-master]: https://github.com/zhilidali/Front-End-Config
 [b-type]: https://github.com/zhilidali/Front-End-Config/tree/type
 [b-react]: https://github.com/zhilidali/Front-End-Config/tree/react
+[b-react-app]: https://github.com/zhilidali/Front-End-Config/tree/react-app
 [b-react+type]: https://github.com/zhilidali/Front-End-Config/tree/react+type
 [b-vue]: https://github.com/zhilidali/Front-End-Config/tree/vue
+[b-vue-app]: https://github.com/zhilidali/Front-End-Config/tree/vue-app
 [b-vue+type]: https://github.com/zhilidali/Front-End-Config/tree/vue+type
