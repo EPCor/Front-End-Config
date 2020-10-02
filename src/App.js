@@ -5,7 +5,6 @@ import AppRouter from '~/Router';
 
 export default (
   <Provider store={store}>
-    <h2>React Engineering Configuration</h2>
     <AppRouter />
   </Provider>
 );

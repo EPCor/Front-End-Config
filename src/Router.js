@@ -21,6 +21,7 @@ const routes = [
 export default function AppRouter() {
   return (
     <Router>
+      <h2>React Engineering Configuration</h2>
       <ul>
         {routes.map(route => (
           <li key={route.path}>
