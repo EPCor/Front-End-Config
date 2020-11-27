@@ -2,7 +2,6 @@ const path = require('path');
 const webpack = require('webpack');
 const { CleanWebpackPlugin } = require('clean-webpack-plugin');
 const HTMLWebpackPlugin = require('html-webpack-plugin');
-const HardSourceWebpackPlugin = require('hard-source-webpack-plugin');
 const CopyWebpackPlugin = require('copy-webpack-plugin');
 const VueLoaderPlugin = require('vue-loader/lib/plugin');
 const resolveCWD = (cwd => name => path.resolve(cwd, name))(process.cwd());
@@ -10,6 +9,7 @@ const resolveCWD = (cwd => name => path.resolve(cwd, name))(process.cwd());
 module.exports = {
   output: {
     filename: '[name].[hash:4].js',
+    path: resolveCWD('dist'),
   },
   module: {
     rules: [
@@ -31,28 +31,30 @@ module.exports = {
       },
       {
         test: /\.(png|jpe?g|gif|svg)$/,
-        use: [
-          {
-            loader: 'url-loader',
-            options: {
-              outputPath: 'images/',
-              limit: 10 * 1024,
-            },
-          },
-        ],
+        type: 'asset/resource',
+        // use: [
+        //   {
+        //     loader: 'url-loader',
+        //     options: {
+        //       outputPath: 'images/',
+        //       limit: 10 * 1024,
+        //     },
+        //   },
+        // ],
       },
       {
         test: /\.(woff|woff2|eot|ttf|otf)$/,
-        use: [
-          {
-            loader: 'file-loader',
-            options: {
-              name: '[name].[hash:5].[ext]',
-              limit: 5000,
-              outputPath: 'fonts/',
-            },
-          },
-        ],
+        type: 'asset/resource',
+        // use: [
+        //   {
+        //     loader: 'file-loader',
+        //     options: {
+        //       name: '[name].[hash:5].[ext]',
+        //       limit: 5000,
+        //       outputPath: 'fonts/',
+        //     },
+        //   },
+        // ],
       },
     ],
   },
@@ -68,7 +70,6 @@ module.exports = {
         collapseWhitespace: true,
       },
     }),
-    new HardSourceWebpackPlugin(),
     new CopyWebpackPlugin({
       patterns: [{ from: 'public', to: '.' }],
     }),
@@ -78,7 +79,7 @@ module.exports = {
     splitChunks: {
       chunks: 'all',
       cacheGroups: {
-        vendor: {
+        defaultVendors: {
           test: /node_modules/,
           name: 'vendors',
           chunks: 'all',
