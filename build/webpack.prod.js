@@ -24,7 +24,7 @@ module.exports = {
     /* webpack default configuration */
     // new HashedModuleIdsPlugin(),
     /* custom plugins configutation */
-    new webpack.HashedModuleIdsPlugin(),
+    new webpack.ids.HashedModuleIdsPlugin(),
     new MiniCssExtractPlugin({
       filename: '[name].css',
       chunkFilename: '[id].[hash:4].css',
