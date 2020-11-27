@@ -4,6 +4,7 @@ const { CleanWebpackPlugin } = require('clean-webpack-plugin');
 const HTMLWebpackPlugin = require('html-webpack-plugin');
 const CopyWebpackPlugin = require('copy-webpack-plugin');
 const VueLoaderPlugin = require('vue-loader/lib/plugin');
+const ESLintWebpackPlugin = require('eslint-webpack-plugin');
 const resolveCWD = (cwd => name => path.resolve(cwd, name))(process.cwd());
 
 module.exports = {
@@ -13,12 +14,6 @@ module.exports = {
   },
   module: {
     rules: [
-      {
-        enforce: 'pre',
-        test: /\.[jt]sx?$/,
-        exclude: /node_modules/,
-        loader: 'eslint-loader',
-      },
       {
         test: /\.[jt]sx?$/,
         exclude: /node_modules/,
@@ -32,29 +27,10 @@ module.exports = {
       {
         test: /\.(png|jpe?g|gif|svg)$/,
         type: 'asset/resource',
-        // use: [
-        //   {
-        //     loader: 'url-loader',
-        //     options: {
-        //       outputPath: 'images/',
-        //       limit: 10 * 1024,
-        //     },
-        //   },
-        // ],
       },
       {
         test: /\.(woff|woff2|eot|ttf|otf)$/,
         type: 'asset/resource',
-        // use: [
-        //   {
-        //     loader: 'file-loader',
-        //     options: {
-        //       name: '[name].[hash:5].[ext]',
-        //       limit: 5000,
-        //       outputPath: 'fonts/',
-        //     },
-        //   },
-        // ],
       },
     ],
   },
@@ -62,6 +38,9 @@ module.exports = {
     new VueLoaderPlugin(),
     new webpack.DefinePlugin({
       NAME: 'APP',
+    }),
+    new ESLintWebpackPlugin({
+      extensions: ['js', 'ts'],
     }),
     new CleanWebpackPlugin(),
     new HTMLWebpackPlugin({
