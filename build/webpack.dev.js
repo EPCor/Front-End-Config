@@ -13,6 +13,7 @@ module.exports = {
     port: config.port,
     open: true,
   },
+  target: 'web',
   module: {
     rules: [
       {
