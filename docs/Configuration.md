@@ -122,7 +122,7 @@ npm i -D style-loader css-loader
 npm i -D file-loader url-loader
 
 # webpack plugins
-npm i -D clean-webpack-plugin html-webpack-plugin mini-css-extract-plugin hard-source-webpack-plugin
+npm i -D clean-webpack-plugin html-webpack-plugin mini-css-extract-plugin
 ```
 
 - _[webpack.config.js][webpack.config.js]_
