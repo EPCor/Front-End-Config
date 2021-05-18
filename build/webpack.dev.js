@@ -14,6 +14,7 @@ module.exports = {
     open: true,
     historyApiFallback: true,
   },
+  target: 'web',
   module: {
     rules: [
       {
