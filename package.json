@@ -10,7 +10,9 @@
     "eslint": "eslint 'src' --ext .jsx,.js",
     "lint": "npm run eslint && npm run stylelint",
     "fix": "npm run eslint -- --fix && npm run stylelint -- --fix",
-    "test": "npm run lint"
+    "test": "npm run lint",
+    "storybook": "start-storybook -p 6006",
+    "build-storybook": "build-storybook"
   },
   "dependencies": {
     "@babel/runtime": "^7.14.0",
@@ -27,6 +29,12 @@
     "@babel/plugin-transform-runtime": "^7.14.3",
     "@babel/preset-env": "^7.14.2",
     "@babel/preset-react": "^7.13.13",
+    "@storybook/addon-actions": "^6.3.0-alpha.41",
+    "@storybook/addon-essentials": "^6.3.0-alpha.41",
+    "@storybook/addon-links": "^6.3.0-alpha.41",
+    "@storybook/builder-webpack5": "^6.3.0-alpha.41",
+    "@storybook/manager-webpack5": "^6.3.0-alpha.41",
+    "@storybook/react": "^6.3.0-alpha.41",
     "@types/babel__core": "^7.1.14",
     "@types/eslint": "^7.2.10",
     "@types/prettier": "^2.2.3",
