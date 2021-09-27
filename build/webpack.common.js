@@ -5,7 +5,10 @@ const HTMLWebpackPlugin = require('html-webpack-plugin');
 const CopyWebpackPlugin = require('copy-webpack-plugin');
 const VueLoaderPlugin = require('vue-loader/lib/plugin');
 const ESLintWebpackPlugin = require('eslint-webpack-plugin');
-const resolveCWD = (cwd => name => path.resolve(cwd, name))(process.cwd());
+const resolveCWD = (
+  cwd => name =>
+    path.resolve(cwd, name)
+)(process.cwd());
 
 module.exports = {
   output: {
