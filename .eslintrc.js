@@ -26,7 +26,7 @@ const options = {
   },
 
   /* third-party plugins */
-  plugins: [],
+  plugins: ['@typescript-eslint'],
   /* Plugins may provide processors */
   processor: '',
   overrides: [
@@ -53,10 +53,8 @@ const options = {
     /**
      * @integration typescript
      * @package @typescript-eslint/eslint-plugin
-     * @description not all eslint core rules are compatible with TypeScript, so you need to add both eslint:recommended and plugin:@typescript-eslint/eslint-recommended
      * @see {@link https://github.com/typescript-eslint/typescript-eslint/tree/master/packages/eslint-plugin}
      */
-    'plugin:@typescript-eslint/eslint-recommended',
     'plugin:@typescript-eslint/recommended',
 
     /**
@@ -68,8 +66,6 @@ const options = {
      * @recommended eslint-plugin-prettier exposes a "recommended" configuration that configures both eslint-plugin-prettier and eslint-config-prettier in a single step.
      */
     'plugin:prettier/recommended',
-    // eslint-config-prettier disable typescript formatting related rules
-    'prettier/@typescript-eslint',
   ],
   rules: {
     /**

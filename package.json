@@ -10,7 +10,8 @@
     "eslint": "eslint 'src' --ext .jsx,.js,.ts,tsx",
     "lint": "npm run eslint && npm run stylelint",
     "fix": "npm run eslint -- --fix && npm run stylelint -- --fix",
-    "test": "npm run lint"
+    "test": "npm run lint",
+    "prepare": "husky install"
   },
   "dependencies": {
     "@babel/runtime": "^7.15.4",
