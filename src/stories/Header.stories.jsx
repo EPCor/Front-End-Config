@@ -1,5 +1,4 @@
 import React from 'react';
-
 import { Header } from './Header';
 
 export default {
@@ -7,7 +6,7 @@ export default {
   component: Header,
 };
 
-const Template = (args) => <Header {...args} />;
+const Template = args => <Header {...args} />;
 
 export const LoggedIn = Template.bind({});
 LoggedIn.args = {
