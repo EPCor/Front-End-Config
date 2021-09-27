@@ -1,4 +1,3 @@
-const webpack = require('webpack');
 const config = require('../config/config.js');
 
 module.exports = {
@@ -8,7 +7,6 @@ module.exports = {
   devtool: 'eval-cheap-module-source-map',
   devServer: {
     hot: true,
-    inline: true,
     host: '0.0.0.0',
     port: config.port,
     open: true,
@@ -41,9 +39,6 @@ module.exports = {
     // new webpack.NamedModulesPlugin(),
     // new webpack.NamedChunksPlugin(),
     // new webpack.DefinePlugin({ 'process.env.NODE_ENV': JSON.stringify('development') }),
-
-    // HotModuleReplacementPlugin
-    new webpack.HotModuleReplacementPlugin(),
   ],
   optimization: {},
 };
