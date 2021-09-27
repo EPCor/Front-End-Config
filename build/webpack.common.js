@@ -4,7 +4,10 @@ const { CleanWebpackPlugin } = require('clean-webpack-plugin');
 const HTMLWebpackPlugin = require('html-webpack-plugin');
 const CopyWebpackPlugin = require('copy-webpack-plugin');
 const ESLintWebpackPlugin = require('eslint-webpack-plugin');
-const resolveCWD = (cwd => name => path.resolve(cwd, name))(process.cwd());
+const resolveCWD = (
+  cwd => name =>
+    path.resolve(cwd, name)
+)(process.cwd());
 
 module.exports = {
   output: {
