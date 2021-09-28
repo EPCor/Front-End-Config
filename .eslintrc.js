@@ -1,10 +1,10 @@
 /** @type { import('eslint').Linter.Config } */
 const options = {
   root: true,
-  /** @package babel-eslint */
-  parser: 'babel-eslint',
+  /** @package @babel/eslint-parser */
+  parser: '@babel/eslint-parser',
   parserOptions: {
-    ecmaVersion: 2020,
+    ecmaVersion: 'latest',
     sourceType: 'module',
   },
 
@@ -15,7 +15,7 @@ const options = {
     commonjs: true,
     node: true,
   },
-  /* global variables */
+  /** global ariables */
   globals: {
     Atomics: false,
     SharedArrayBuffer: false,
