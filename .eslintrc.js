@@ -7,7 +7,7 @@ const options = {
    */
   parser: '@typescript-eslint/parser',
   parserOptions: {
-    ecmaVersion: 2020,
+    ecmaVersion: 'latest',
     sourceType: 'module',
   },
 
@@ -18,7 +18,7 @@ const options = {
     commonjs: true,
     node: true,
   },
-  /* global variables */
+  /** global ariables */
   globals: {
     Atomics: false,
     SharedArrayBuffer: false,
